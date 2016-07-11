@@ -1,15 +1,12 @@
 import java.util.HashMap;
 
 public class Weather {
-
 	private String cityName;
 	private double currentTemp;
 	private double lowTemp;
 	private double highTemp;
 
-
 	public Weather() {
-		
 	}
 	
 	@SuppressWarnings("unchecked") //surpress compile warnings about unchecked generic operations
@@ -20,7 +17,6 @@ public class Weather {
 		this.currentTemp = (Double)mainBlock.get("temp");
 		this.lowTemp = (Double)mainBlock.get("temp_min");
 		this.highTemp = (Double)mainBlock.get("temp_max");
-
 	}
 
 	public String getCityName() {
@@ -38,6 +34,4 @@ public class Weather {
 	public double getHighTemp() {
 		return this.highTemp;
 	}
-
-
 }

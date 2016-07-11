@@ -4,7 +4,6 @@ import java.util.HashMap;
 import org.JSONInputStream;
 
 public class EmptyURLTest {
-
     @SuppressWarnings("unchecked") //surpress compile warnings about unchecked generic operations
     public static void main(String[] args) {
 
@@ -15,13 +14,8 @@ public class EmptyURLTest {
             JSONInputStream weatherStream = new JSONInputStream(link.getInputStream());
             HashMap<String, ?> jsonWeather = (HashMap<String, ?>) weatherStream.readObject();
             Weather theWeather = new Weather(jsonWeather);
-
         } catch (Exception e) {
-
             e.printStackTrace();
-
         }
-
     }
-
 }
