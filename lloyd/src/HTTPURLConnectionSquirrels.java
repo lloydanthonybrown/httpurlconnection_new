@@ -3,7 +3,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.HashMap;
 
-public class HTTPURLConnection {
+public class HTTPURLConnectionSquirrels {
 //    @SuppressWarnings("unchecked") //surpress compile warnings about unchecked generic operations
 //    https://dp.la/info/developers/codex/policies/#get-a-key
 //    my DPLA (Digital Public Library of America) key = 7f1c6a0558d81501cb1c1dc67e4c20bc
