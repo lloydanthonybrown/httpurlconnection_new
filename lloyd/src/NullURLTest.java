@@ -1,15 +1,15 @@
+import org.quickconnectfamily.json.JSONInputStream;
+
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.HashMap;
-import org.JSONInputStream;
 
-public class EmptyURLTest {
+public class NullURLTest {
     @SuppressWarnings("unchecked") //surpress compile warnings about unchecked generic operations
     public static void main(String[] args) {
-
         try {
-            // Will fail because it has a null for a URL --MalformedURLException--
-            URL url = new URL("");
+            // Will fail because it has a null for a URL --MalformedURLException-- and NullPointerException
+            URL url = new URL(null);
             HttpURLConnection link = (HttpURLConnection) url.openConnection();
             JSONInputStream weatherStream = new JSONInputStream(link.getInputStream());
             HashMap<String, ?> jsonWeather = (HashMap<String, ?>) weatherStream.readObject();
